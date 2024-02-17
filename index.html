@@ -1,18 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticket</title>
-
+    <!-- icons kit -->
+    <script src="https://kit.fontawesome.com/dd113c3ca7.js" crossorigin="anonymous"></script>
+        <!-- daisy ui and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-
 </head>
 <body>
+    <header class="container mt-10  px-5 mx-auto lg:px-24">
+        <!-- nav bar start -->
 
+
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  
+                 
+                  
+                </ul>
+              </div>
+              <a class="btn btn-ghost font-bold lg:text-3xl">HR-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                <li><a>About</a></li>
+                <li>
+                  
+                    <summary>Destination</summary>
+                    <ul class="p-2">
+                     
+                    </ul>
+                  
+                </li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn px-9 border-1 text-[#1DD100] border-b-lime-600  rounded-lg bg-[#1cd1003c] ">bus  <i class="fa-solid fa-van-shuttle"></i></a>
+            </div>
+          </div>
+
+        </nav>
+
+        <!-- banner section start -->
+        
+       
+
+        <div class="hero rounded-lg bg-[url('./images/banner.png')]" >
+            
+            
+            <div class="hero-content text-center text-neutral-content ">
+                
+              <div class=" pb-[3rem] lg:pb-[8rem] ">
+                <h1 class="text-2xl lg:text-5xl  pt-[4rem]  font-bold">End-to-End Travel with </h1>
+
+                <h2 class="text-[#1DD100] text-2xl lg:text-5xl p-6 font-bold">HR Paribahan</h2>
+
+                <p class="mb-5">Travelling is an amazing way to learn a lot of things in life.the world travel every year to many places. Moreover, <br>
+                    it is important to travel to humans travel to take a break from their life. </p>
+
+                <button class="btn btn-primary text-black bg-[#1DD100] ">buy ticket</button>
+                
+              </div>
+            </div>
+          </div>
+
+        
+            
+       </div>
+
+    </header>
+
+    <main></main>
     
-    
+
 </body>
 </html>
