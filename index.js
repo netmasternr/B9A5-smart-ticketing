@@ -6,6 +6,9 @@ let sitCount = 0;
 for (const card of allCards) {
     card.addEventListener('click', function() {
 
+      // color
+      card.style.backgroundColor = 'green';
+
         // One button click only
         card.removeEventListener('click', arguments.callee);
 
@@ -17,10 +20,10 @@ for (const card of allCards) {
 
         
 
-        // Check if all seats are filled
-        if (sitCount === 4) {
+        //seats checking
+        if (sitCount >= 4) {
             alert('All seats are filled!');
-            sitCount = 0;
+            sitCount = 0;          
             countDownElement.innerText = 8; 
         }
 
@@ -43,3 +46,5 @@ for (const card of allCards) {
 
     });
 }
+
+
