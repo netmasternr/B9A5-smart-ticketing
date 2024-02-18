@@ -147,11 +147,11 @@
                     <div class="bg-[#1DD10026] px-7 lg:py-4 lg:px-3 lg: rounded-lg lg:flex gap-2">
 
                         <img src="./images/seat-green.png" alt="">
- <!--    there ticket 40 seat tag -->
+ <!--    there ticket 8 seat tag -->
                         <p>
-                            <span>8</span> seats left
+                            <span id="count-down">8</span> seats left
                         </p>
-          <!--    there ticket 40 seat tag -->
+          <!--    there ticket 8 seat tag -->
                     </div>
     
                       
@@ -225,25 +225,25 @@
     
                 <div class=" flex gap-8  justify-around mt-3">
                     
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A1</button>
+                <button  class="cards   bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A1</button>
 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A2</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A2</button>
 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A3</button>
+                <button  class= "cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A3</button>
 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A4</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">A4</button>
 
             </div>
                 <!--  -->
                <div class=" flex  gap-8 justify-around mt-3">
                  
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B1</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B1</button>
 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B2</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B2</button>
 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B3</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B3</button>
                 
-                <button class="bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B4</button>
+                <button  class="cards bg-[#F7F8F8] text-center rounded-lg w-[110px] py-3">B4</button>
 
             </div>
                  <!--  -->
@@ -263,7 +263,7 @@
                     <div class="flex justify-between py-2 px-3 ">
         <!-- sit + count is here -->
                         <li class="list-none text-xl 
-                        font-semibold">seat <span id="sit count" class="text-[#1DD100]">0</span></li>
+                        font-semibold">seat <span id="sit-count" class="text-[#1DD100]">0</span></li>
 
                         <li class="list-none text-xl font-semibold">class</li>
     
@@ -281,7 +281,7 @@
                     <p>Total</p>
 
                 <!-- total price id here -->
-                    <p id="total-price">0</p>
+                    <p>BDT <SPan id="total-price">0</SPan></p>
                 </div>
 
                 <!-- coupon button is here -->
@@ -292,8 +292,9 @@
                 </div>
 
                 <div class="flex justify-between text-xl font-semibold">
+                    <!-- grant total -->
                     <p>Grand Total</p>
-                    <p id="grant-total">0</p>
+                    <p >BDT <span id="grant-total">0</span></p>
                 </div>
                 
                 
@@ -306,6 +307,6 @@
 
     </main>
     
-
+<script src="./index.js"></script>
 </body>
 </html>
