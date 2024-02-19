@@ -16,11 +16,28 @@ for (const card of allCards) {
         countDownValue -= 1;
         countDownElement.innerText = countDownValue;
 
-        // create new Element
-         
+               // create new Element
+               const createLi = document.createElement('div');
 
-
-
+               const addDiv = document.getElementById('create-elements');
+               
+               const d1 = document.createElement('div');
+               d1.innerText = card.innerText;
+               
+               const d2 = document.createElement('div');
+               d2.innerText = 'economy';
+               
+               const d3 = document.createElement('div');
+               d3.innerText = 550;
+               
+               createLi.appendChild(d1);
+               createLi.appendChild(d2);
+               createLi.appendChild(d3);
+               
+               createLi.classList.add('flex', 'justify-between');
+ 
+               addDiv.appendChild(createLi);
+               
         // Seats checking
         if (sitCount >= 4) {
             alert('All seats are filled!');
