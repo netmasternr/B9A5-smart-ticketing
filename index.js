@@ -23,6 +23,7 @@ for (const card of allCards) {
         //seats checking
         if (sitCount >= 4) {
             alert('All seats are filled!');
+            
             sitCount = 0;          
             countDownElement.innerText = 8; 
         }
