@@ -3,12 +3,21 @@ const allCards = document.getElementsByClassName('cards');
 let sitCount = 0;
 
 for (const card of allCards) {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function(e) {
+
+        // Seats checking condition
+        if (sitCount >= 4) {
+            alert('All seats are filled!');           
+            return; 
+        }
+
         // color
         card.style.backgroundColor = 'green';
 
         // One button click only
-        card.removeEventListener('click', arguments.callee);
+        // card.removeEventListener('click', arguments.callee);
+        e.target.disabled= true;
+
 
         // Seat count down
         const countDownElement = document.getElementById('count-down');
@@ -38,13 +47,7 @@ for (const card of allCards) {
  
                addDiv.appendChild(createLi);
                
-        // Seats checking
-        if (sitCount >= 4) {
-            alert('All seats are filled!');
-            
-            sitCount = 0;          
-            countDownElement.innerText = 8; 
-        }
+        
 
         // Sit count up
         sitCount += 1;
